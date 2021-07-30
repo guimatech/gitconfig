@@ -8,7 +8,7 @@
 [alias]
 	s = !git status -s
 	c = !git add --all && git commit -m
-	l = !git log --pretty=format:'%C(blue)%h%C(red)%d %C(white)%s - %C(cyan)%cn, %C(green)%cr'
+	l = !export LC_ALL=C.UTF-8 && git log --pretty=format:'%C(blue)%h%C(red)%d %C(white)%s - %C(cyan)%cn, %C(green)%cr'
 	ck = !git checkout
 [credential]
 	helper = manager
